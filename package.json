@@ -1,0 +1,23 @@
+{
+	"name": "liblzg",
+	"author": { 
+		"name" : "Alexandre Amaral de Carvalho",
+		"email" : "ajscarvalho@gmail.com",
+		"url" : "http://alexandre.amaraldecarvalho.eu/"
+	},
+	"description": "fast compression and decompression lib, as provided by liblzg written by Marcus Geelnard",
+	"version": "1.0.1",
+	"contributors": [
+		{ "name": "Marcus Geelnard" , "url": "http://sourceforge.net/users/marcus256" }
+	],
+	"main": "build/default/liblzg.node",
+	"directories": { "lib": "./build/default" },
+	"engines": { "node": ">= 0.4.0" },
+	"scripts" : {
+		"preinstall" : "node-waf configure && node-waf build",
+		"preuninstall" : "rm -rf build/*"
+	},
+	"repositories": [
+		{"type": "git", "url": "http://github.com/ajscarvalho/node-liblzg" }
+	]
+}
